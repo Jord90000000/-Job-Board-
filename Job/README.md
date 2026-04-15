@@ -1,18 +1,52 @@
-# React + Vite
+# 🚀 Job Board - Доска Вакансий
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современная доска вакансий с Firebase Firestore интеграцией.
 
-Currently, two official plugins are available:
+## ✨ Функционал
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ➕ **Добавление вакансий** - форма с валидацией
+- 📋 **Список вакансий** - красивые карточки
+- 🔍 **Поиск** - по названию вакансии (реал-тайм с дебаунсом)
+- 🎯 **Фильтр** - по категориям
+- 🗑️ **Удаление** - вакансий
+- 📱 **Адаптивный дизайн** - работает на всех устройствах
 
-## React Compiler
+## 🛠️ Настройка Firebase
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. Создайте проект в [Firebase Console](https://console.firebase.google.com/)
+2. Включите Firestore Database
+3. Получите конфигурацию проекта
+4. Замените значения в `src/firebase.js`:
 
-Note: This will impact Vite dev & build performances.
+```javascript
+const firebaseConfig = {
+  apiKey: "ваш-api-key",
+  authDomain: "ваш-project.firebaseapp.com",
+  projectId: "ваш-project-id",
+  storageBucket: "ваш-project.appspot.com",
+  messagingSenderId: "ваш-sender-id",
+  appId: "ваш-app-id"
+};
+```
 
-## Expanding the ESLint configuration
+## 🚀 Запуск
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## 🎨 Дизайн
+
+- Минималистичный и современный интерфейс
+- Градиентный фон
+- Плавные анимации
+- Иконки для лучшего UX
+- Адаптивная верстка
+
+## 📦 Технологии
+
+- React 19
+- Firebase Firestore
+- Vite
+- CSS3 с современными фичами
